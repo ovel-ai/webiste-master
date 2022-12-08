@@ -1,0 +1,11 @@
+RewriteEngine on
+
+Redirect 302 /discord https://discord.gg/qGxRHRh5zU
+Redirect 302 /status https://status.ovel-ai.cf
+Redirect 302 /docs https://docs.ovel-ai.cf
+
+RewriteCond %{THE_REQUEST} /([^.]+)\.html [NC]
+RewriteRule ^ /%1 [NC,L,R]
+
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^ %{REQUEST_URI}.html [NC,L]
