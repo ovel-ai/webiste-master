@@ -20,6 +20,15 @@
   clip: rect(0, 0, 0, 0);
   border: 0; }
 
+::-webkit-scrollbar { width: 8px; height: 3px;}
+::-webkit-scrollbar-button {  background-color: #0000; }
+::-webkit-scrollbar-track {  background-color: #0000;}
+::-webkit-scrollbar-track-piece { background-color: #0000;}
+::-webkit-scrollbar-thumb { height: 50px; background-color: #0000; border-radius: 3px;}
+::-webkit-scrollbar-corner { background-color: #0000;}}
+::-webkit-resizer { background-color: #0000;}
+
+
 .fr-view img.fr-rounded, .fr-view .fr-img-caption.fr-rounded img {
   border-radius: 10px;
   -moz-border-radius: 10px;
